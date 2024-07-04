@@ -1,0 +1,70 @@
+{
+    "menu": {
+           "welcome_text": "👋Hai!\n Dewa acak akan membantu kamu membuat giveaway di channel.\n Apakah kamu siap untuk membuat giveaway baru?",
+           "menu_buttons": ["Buat giveaway 🎁", "Giveaway saya 🎉", "Ganti bahasa 🇷🇺", "Dukungan ⁉️", "Bagikan dengan teman 👥"],
+           "invite": "Bagikan bot ini dengan teman-temanmu dengan mengirimkan username bot \n @GiveawaySMSMAN",
+           "support": "t.me/smsmanindo"
+          },
+    "draw": {
+           
+           "back_in_menu": "Kembali ke menu ↩️",
+           "back": "Kembali ↩️",
+           "draw_buttons": ["Ubah waktu mulai ⏳", "Ubah waktu selesai ⌛️", "Ubah jumlah pemenang 🏆", "Ubah deskripsi 📑", "Ubah foto/gif 🖼", "Cek langganan ✅", "Publikasikan 🎲", "Kembali ke menu ↩️"],
+  
+           "chanel_id":"Masukkan username channel tempat giveaway akan dipublikasikan dalam format @username.  Kamu harus menjadi admin di channel ini dan menambahkan bot ke administrator.\n Jika channel bersifat privat, maka kamu perlu mengirimkan id channel ini. Untuk mengetahui id channel privat, forward salah satu post dari channel ini ke bot khusus @getmyid_bot, bagian bawah respons dari bot adalah id channel privatemu. Forward id ini ke bot",
+           "chanel_id_check": "Masukkan username channel untuk verifikasi dalam format @username.\n \n Jika channel bersifat privat, maka kamu perlu mengirimkan id channel ini. Untuk mengetahui id channel privat, forward salah satu post dari channel ini ke bot khusus @getmyid_bot, bagian bawah respons dari bot adalah id channel privatemu. Forward id ini ke bot.\n Cantumkan link channel ini dalam deskripsi agar peserta giveaway tahu channel mana yang harus diikuti",
+           "not_admin":"Untuk mempublikasikan giveaway, kamu harus menjadi admin di channel ini. Kirimkan username sebagai admin",
+           "not_in_chanel":"Bot bukan admin di channel ini. Tambahkan bot ke administrator dan kirimkan @username lagi",
+           
+           "draw_text":"Masukkan deskripsi giveaway. \n Tip: jelaskan apa hadiahnya, berapa jumlah pemenang dan apa yang akan mereka menangkan, channel mana yang harus diikuti peserta, dan cantumkan tanggal dan waktu akhir giveaway.\n Kamu bisa menggunakan markup html.\n 1)Teks tebal - <b>your text</b>\n 2)Teks miring - <i>your text</i>\n 3)Hyperlink ke channel - <a href='your channel link'>your text</a>.\n Link harus dalam format ini: https://t.me/channel",
+           "file":"Kirim gambar atau GIF (opsional, jika tidak perlu, kirim pesan lain)",
+           
+           "winers_count":"Masukkan jumlah pemenang",
+           "not_int": "Ini bukan angka",
+  
+           "post_time":"Masukkan tanggal dan waktu mulai giveaway dalam format: (tahun-bulan-hari jam:menit), misalnya 2020-10-25 21:05",
+           "end_time":"Masukkan tanggal dan waktu akhir giveaway dalam format: (tahun-bulan-hari jam:menit), misalnya 2020-10-31 21:55",
+           "over_time": "Waktu ini sudah lewat, masukkan waktu yang lebih dari waktu sekarang",
+           "invalid_format_time": "Format waktu tidak valid, masukkan waktu dalam format: (tahun-bulan-hari jam:menit), misalnya 2020-08-25 21:00",
+           "post_biger": "Waktu posting lebih lama, masukkan waktu dalam format: (tahun-bulan-hari jam:menit), misalnya 2020-08-26 21:41",
+  
+           "get_on":"Ikut serta",
+  
+           "change_text": "Apa yang perlu diubah dalam giveaway?",
+           "chanel/chat": "Channel/chat:",
+           "text": "Deskripsi:",
+           "count_text":"Jumlah pemenang:",
+           "post_time_text":"Waktu mulai:",
+           "over_time_text":"Waktu akhir:",
+  
+           "submit_text":"Giveaway telah dibuat dan akan dipublikasikan di channel pada waktu yang dipilih",
+  
+  
+           "play":"Ikut serta",
+           "not_subscribe": "@GiveawaySMSMAN: Kamu belum mengikuti semua channel, harap baca deskripsi giveaway dengan seksama dan ikuti semua channel yang diperlukan untuk berpartisipasi",
+           "already_in":"@GiveawaySMSMAN: Kamu sudah berpartisipasi",
+           "got_on":"@GiveawaySMSMAN: Selamat, kamu sudah masuk giveaway!",
+  
+           "winers":"Giveaway telah berakhir.\n Pemenang:",
+           "no_winers":"Tidak ada pemenang",
+  
+           "failed_post": "Gagal mengirim giveaway karena channel dihapus",
+           "your_draw_over": "Giveawaymu sudah berakhir"
+          },
+  
+    "my_draw":{
+           "no_draw": "Kamu tidak memiliki giveaway aktif",
+           "last":"Terakhir",
+           "first":"Berikutnya",
+           "your_draw":"Giveawaymu:",
+           "chanel/chat": "Channel/chat:",
+             "text": "Deskripsi:",
+             "count_text":"Jumlah pemenang:",
+             "post_time_text":"Waktu mulai:",
+             "over_time_text":"Waktu akhir:",
+  
+             "next":"Berikutnya",
+             "back":"Kembali"
+  
+          }
+  }
