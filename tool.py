@@ -3,8 +3,9 @@ import telebot
 import models
 from app import tool_base
 
-
-
+# Load the default and specific language files
+file = open("ID.json", encoding="utf-8")
+default_bot_text = json.load(file)
 
 file = open("RU.json", encoding="utf-8")
 ru_bot_text = json.load(file)
@@ -12,18 +13,16 @@ ru_bot_text = json.load(file)
 file = open("ENG.json", encoding="utf-8")
 eng_bot_text = json.load(file)
 
-
 # ----Подгружаем файл с текстами ответов бота----
 def language_check(user_id):
     language = tool_base.get_one(models.User, user_id=str(user_id))
-    if language == None:
-        return (False, ru_bot_text)
+    if language is None:
+        return (False, default_bot_text)
     else:
         if language.language == "RU":
             return (True, ru_bot_text)
         else:
             return (True, eng_bot_text)
-
 
 def create_inlineKeyboard(key, row=0):
     keyboard = telebot.types.InlineKeyboardMarkup()
@@ -41,4 +40,3 @@ def create_inlineKeyboard(key, row=0):
         if list(key.keys())[-1] == i:
             keyboard.add(*[i for i in key_list])
     return keyboard
-

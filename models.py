@@ -1,6 +1,7 @@
 import config
 import time
-from sqlalchemy import Table, MetaData, Column, Integer, String, ForeignKey, Binary, Boolean
+from sqlalchemy import Table, MetaData, Column, Integer, String, ForeignKey, Boolean
+from sqlalchemy.types import LargeBinary
 from sqlalchemy.orm import mapper
 from sqlalchemy import create_engine
 from sqlalchemy.ext.declarative import declarative_base
@@ -151,7 +152,7 @@ class State(Base):
     __tablename__ = 'user_state'
     user_id = Column(Integer, primary_key=True)
     state = Column(String)
-    arg = Column(Binary)
+    arg = Column(LargeBinary)
 
     def __init__(self, user_id, state, arg):
         self.user_id = user_id

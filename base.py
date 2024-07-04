@@ -3,9 +3,6 @@ from models import Base as BaseObj
 from models import engine as BaseEngine
 from sqlalchemy import select
 
-
-
-
 class DataBase:
 	def select_all(self,Model,**filter_s):
 		query = session.query(Model)
@@ -63,8 +60,6 @@ class DataBase:
 
 	def base_init(self):
 		BaseObj.metadata.create_all(BaseEngine)		
-
-
 
 d = DataBase()
 d.base_init()
